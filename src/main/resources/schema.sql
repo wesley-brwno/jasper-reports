@@ -3,3 +3,12 @@ CREATE TABLE Uf (
     nome VARCHAR(255),
     sigla VARCHAR(2)
 );
+
+CREATE TABLE Municipio (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255),
+    uf_id BIGINT,
+    populacao BIGINT,
+    FOREIGN KEY (uf_id) REFERENCES UF(id)
+);
+

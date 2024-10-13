@@ -19,6 +19,5 @@ public class Municipio {
     @ManyToOne
     @JoinColumn(name = "uf_id")
     private Uf uf;
-    @Column(name = "população")
     private Long populacao;
 }

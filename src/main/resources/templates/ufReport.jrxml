@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="helloWorld" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d97bceed-684e-46bc-b36a-d8cb196c0b22">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="imagemLogo" class="java.lang.String"/>
+	<parameter name="nmSistema" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="id" class="java.lang.Long"/>
+	<field name="nome" class="java.lang.String"/>
+	<field name="sigla" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="111" splitType="Stretch">
+			<textField>
+				<reportElement x="80" y="10" width="370" height="30" uuid="a7c244b6-0a69-4890-aa7b-9b1ccbb6dbe7"/>
+				<textFieldExpression><![CDATA[$P{nmSistema}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="0" y="10" width="50" height="50" uuid="eef52e88-59a0-4fbd-94b5-9ded7ce66eb3"/>
+				<imageExpression><![CDATA[$P{imagemLogo}]]></imageExpression>
+			</image>
+			<textField pattern="M/d/yy">
+				<reportElement x="460" y="10" width="100" height="30" uuid="2f881006-5c8e-4a75-b98b-fd7a42c2f2db"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="82" y="52" width="100" height="30" uuid="9253ed17-88de-49f8-84c3-959d56524429"/>
+				<text><![CDATA[Relatório de UF]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="460" y="50" width="110" height="30" uuid="7f1f67aa-e3b9-49d1-a0b5-99d20c0e8202"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<line direction="BottomUp">
+				<reportElement x="-15" y="100" width="584" height="1" uuid="566694b3-6e25-4235-ad95-7849acb38afa"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="32" splitType="Stretch">
+			<staticText>
+				<reportElement x="4" y="1" width="100" height="30" uuid="efc94f42-dbc5-40b7-8f8b-b8ed966d44d2"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Código]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="182" y="1" width="100" height="30" uuid="0da0c50a-6baf-4608-b4ad-6cc472d02740"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nome]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="1" width="100" height="30" uuid="ec8599f5-7951-4469-ab97-806754a039f2"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sigla]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="44" splitType="Stretch">
+			<textField>
+				<reportElement x="4" y="0" width="100" height="30" uuid="1d21926e-2f14-4774-853f-6e7fb43dea2f"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="181" y="0" width="100" height="30" uuid="dfea3ce0-2a32-414b-92ac-248262dc699b"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="0" width="100" height="30" uuid="e20101b5-b9f6-4291-a540-b9f1316a8e05"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{sigla}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="82" y="40" width="377" height="1" uuid="c877970c-3827-43a6-a858-fdcbee20f4e6"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

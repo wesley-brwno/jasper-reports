@@ -1,0 +1,10 @@
+INSERT INTO UF (nome, sigla) VALUES ('Acre', 'AC');
+INSERT INTO UF (nome, sigla) VALUES ('Alagoas', 'AL');
+INSERT INTO UF (nome, sigla) VALUES ('Amapá', 'AP');
+INSERT INTO UF (nome, sigla) VALUES ('Amazonas', 'AM');
+INSERT INTO UF (nome, sigla) VALUES ('Bahia', 'BA');
+INSERT INTO UF (nome, sigla) VALUES ('Ceará', 'CE');
+INSERT INTO UF (nome, sigla) VALUES ('Distrito Federal', 'DF');
+INSERT INTO UF (nome, sigla) VALUES ('Espírito Santo', 'ES');
+INSERT INTO UF (nome, sigla) VALUES ('Goiás', 'GO');
+INSERT INTO UF (nome, sigla) VALUES ('Maranhão', 'MA');

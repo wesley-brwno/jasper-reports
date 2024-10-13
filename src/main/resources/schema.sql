@@ -1,0 +1,5 @@
+CREATE TABLE Uf (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255),
+    sigla VARCHAR(2)
+);
